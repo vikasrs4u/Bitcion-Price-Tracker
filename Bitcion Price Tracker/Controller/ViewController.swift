@@ -111,7 +111,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     func updateBitCoinData(jsonValue:JSON)
     {
         // below Optional wrapping is required to avoid app crashing incase we get error code from the api call
-        if let bitCoinPrice = jsonValue["last"].double
+        if let bitCoinPrice = jsonValue["ask"].double
         {
             bitCoinDataModel.bitCoinPrice = bitCoinPrice
             // below method will update all UI labels and image views
