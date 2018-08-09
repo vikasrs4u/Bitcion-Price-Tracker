@@ -23,6 +23,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     let bitCoinDataModel = BitCoinDataModel()
     
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
+        let currencyNameArray = ["Australian Dollar", "Brazilian Real","Canadian Dollar","Chinese Yuan","Euro","Pound Sterling","Hong Kong Dollar","Indonesian Rupiah","Israeli New Shekel","Indian Rupee","Japanese Yen","Mexican Peso","Norwegian Krone","New Zealand Dollar","Poland Złoty","Romanian Leu","Russian Ruble","Swedish Krona","Singapore Dollar","United States Dollar","South African Rand"]
         let currencySymbolArray = ["A$", "R$","C$","¥","€","£","HK$","Rp","₪","₹","¥","Mex$","kr","$","zł","lei","₽","kr","S$","$","R"]
     var finalURL = ""
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     {
         super.viewDidLoad()
         
-        // Very important peiece of code where we are registering our class as delegate and data source for this currency picker.
+        // Very important peiece of code where we are registering our class as delegate and data source for this currency picker. And also remeber to add the binding for picker data source and delegate as ViewController. Without this also it will work, but on safer side provide the same.
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
         
@@ -52,14 +53,14 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
-        return currencyArray.count
+        return currencyNameArray.count
     }
 
     //MARK: - Picker Delegate methods
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
-        return currencyArray[row]
+        return currencyNameArray[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
