@@ -12,6 +12,7 @@
 		1D522F6A211C0ED100D15C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D522F68211C0ED100D15C4C /* Main.storyboard */; };
 		1D522F6C211C0ED100D15C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D522F6B211C0ED100D15C4C /* Assets.xcassets */; };
 		1D522F6F211C0ED100D15C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D522F6D211C0ED100D15C4C /* LaunchScreen.storyboard */; };
+		67B2806663C8CE9381D1F447 /* Pods_Bitcion_Price_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D45D1C26996E61C3C0FED3D /* Pods_Bitcion_Price_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1D522F6B211C0ED100D15C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D522F6E211C0ED100D15C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D522F70211C0ED100D15C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DB01B837BD4A9E132A6BB6 /* Pods-Bitcion Price Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcion Price Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcion Price Tracker/Pods-Bitcion Price Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		4D45D1C26996E61C3C0FED3D /* Pods_Bitcion_Price_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcion_Price_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C7BF6CF17C413C967D13F5 /* Pods-Bitcion Price Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcion Price Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcion Price Tracker/Pods-Bitcion Price Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B2806663C8CE9381D1F447 /* Pods_Bitcion_Price_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0167B187268CB6AA0CC9AC2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D45D1C26996E61C3C0FED3D /* Pods_Bitcion_Price_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D0BFB70211CED9B00B8D0E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D522F68211C0ED100D15C4C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D0BFB71211CEDAD00B8D0E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D522F66211C0ED100D15C4C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1D0BFB72211CEDDF00B8D0E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1D522F58211C0ED100D15C4C = {
 			isa = PBXGroup;
 			children = (
 				1D522F63211C0ED100D15C4C /* Bitcion Price Tracker */,
 				1D522F62211C0ED100D15C4C /* Products */,
+				28B7595160BA8AD4EC792F0E /* Pods */,
+				0167B187268CB6AA0CC9AC2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +92,24 @@
 		1D522F63211C0ED100D15C4C /* Bitcion Price Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				1D0BFB72211CEDDF00B8D0E0 /* Model */,
+				1D0BFB71211CEDAD00B8D0E0 /* Controller */,
+				1D0BFB70211CED9B00B8D0E0 /* View */,
 				1D522F64211C0ED100D15C4C /* AppDelegate.swift */,
-				1D522F66211C0ED100D15C4C /* ViewController.swift */,
-				1D522F68211C0ED100D15C4C /* Main.storyboard */,
 				1D522F6B211C0ED100D15C4C /* Assets.xcassets */,
 				1D522F6D211C0ED100D15C4C /* LaunchScreen.storyboard */,
 				1D522F70211C0ED100D15C4C /* Info.plist */,
 			);
 			path = "Bitcion Price Tracker";
+			sourceTree = "<group>";
+		};
+		28B7595160BA8AD4EC792F0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5C7BF6CF17C413C967D13F5 /* Pods-Bitcion Price Tracker.debug.xcconfig */,
+				23DB01B837BD4A9E132A6BB6 /* Pods-Bitcion Price Tracker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D522F73211C0ED100D15C4C /* Build configuration list for PBXNativeTarget "Bitcion Price Tracker" */;
 			buildPhases = (
+				A9A63CB4B466BDE1829E4F92 /* [CP] Check Pods Manifest.lock */,
 				1D522F5D211C0ED100D15C4C /* Sources */,
 				1D522F5E211C0ED100D15C4C /* Frameworks */,
 				1D522F5F211C0ED100D15C4C /* Resources */,
+				7D559B41BB467ADCB2C5F6FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +179,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D559B41BB467ADCB2C5F6FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bitcion Price Tracker/Pods-Bitcion Price Tracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitcion Price Tracker/Pods-Bitcion Price Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A63CB4B466BDE1829E4F92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bitcion Price Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D522F5D211C0ED100D15C4C /* Sources */ = {
@@ -278,6 +369,7 @@
 		};
 		1D522F74211C0ED100D15C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C7BF6CF17C413C967D13F5 /* Pods-Bitcion Price Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +388,7 @@
 		};
 		1D522F75211C0ED100D15C4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DB01B837BD4A9E132A6BB6 /* Pods-Bitcion Price Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

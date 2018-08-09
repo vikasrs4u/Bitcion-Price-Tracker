@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bitcion_Price_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4An-HG-wTl">
-                                <rect key="frame" x="8" y="0.0" width="720" height="150"/>
+                                <rect key="frame" x="8" y="20" width="398" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitCoin" translatesAutoresizingMaskIntoConstraints="NO" id="6kF-JT-d40">
-                                        <rect key="frame" x="246.66666666666663" y="6" width="228" height="139"/>
+                                        <rect key="frame" x="85" y="6" width="228" height="139"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="139" id="FJv-xM-fnE"/>
                                             <constraint firstAttribute="width" constant="228" id="TWk-RI-Qrw"/>
@@ -36,15 +36,15 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs5-aT-f7c">
-                                <rect key="frame" x="8" y="158" width="720" height="60"/>
+                                <rect key="frame" x="8" y="178" width="398" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9X-rF-Veo">
-                                <rect key="frame" x="0.0" y="238" width="736" height="176"/>
+                                <rect key="frame" x="0.0" y="536" width="414" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="176" id="vbS-Jy-0oj">
+                                    <constraint firstAttribute="height" constant="200" id="vbS-Jy-0oj">
                                         <variation key="heightClass=compact-widthClass=compact" constant="100"/>
                                     </constraint>
                                 </constraints>
@@ -64,6 +64,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currencyPicker" destination="j9X-rF-Veo" id="inS-8c-xXd"/>
+                        <outlet property="priceLabelOutlet" destination="hs5-aT-f7c" id="pqr-fb-vR7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
