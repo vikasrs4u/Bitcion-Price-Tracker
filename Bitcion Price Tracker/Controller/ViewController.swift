@@ -23,8 +23,12 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     let bitCoinDataModel = BitCoinDataModel()
     
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
+    
         let currencyNameArray = ["Australian Dollar", "Brazilian Real","Canadian Dollar","Chinese Yuan","Euro","Pound Sterling","Hong Kong Dollar","Indonesian Rupiah","Israeli New Shekel","Indian Rupee","Japanese Yen","Mexican Peso","Norwegian Krone","New Zealand Dollar","Poland Złoty","Romanian Leu","Russian Ruble","Swedish Krona","Singapore Dollar","United States Dollar","South African Rand"]
+    
+    
         let currencySymbolArray = ["A$", "R$","C$","¥","€","£","HK$","Rp","₪","₹","¥","Mex$","kr","$","zł","lei","₽","kr","S$","$","R"]
+    
     var finalURL = ""
     
     
