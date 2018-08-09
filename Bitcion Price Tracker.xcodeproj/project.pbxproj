@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0BFB74211CF09A00B8D0E0 /* BitCoinDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0BFB73211CF09A00B8D0E0 /* BitCoinDataModel.swift */; };
 		1D522F65211C0ED100D15C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D522F64211C0ED100D15C4C /* AppDelegate.swift */; };
 		1D522F67211C0ED100D15C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D522F66211C0ED100D15C4C /* ViewController.swift */; };
 		1D522F6A211C0ED100D15C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D522F68211C0ED100D15C4C /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D0BFB73211CF09A00B8D0E0 /* BitCoinDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinDataModel.swift; sourceTree = "<group>"; };
 		1D522F61211C0ED100D15C4C /* Bitcion Price Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitcion Price Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D522F64211C0ED100D15C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D522F66211C0ED100D15C4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		1D0BFB72211CEDDF00B8D0E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1D0BFB73211CF09A00B8D0E0 /* BitCoinDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D522F67211C0ED100D15C4C /* ViewController.swift in Sources */,
+				1D0BFB74211CF09A00B8D0E0 /* BitCoinDataModel.swift in Sources */,
 				1D522F65211C0ED100D15C4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
