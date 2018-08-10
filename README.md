@@ -1,5 +1,5 @@
 # Bit Pricer
-Bit Pricer is a iOS for iPhone that lets you know the current asking price for one Bitcoin in different currencies. Using this iOS app one can get current Bitcion price data for more than 21 different currencies. 
+Bit Pricer is an iOS app for iPhone that lets you know the current asking price for one Bitcoin in different currencies. Using this iOS app one can get the current Bitcoin price data for more than 21 different currencies. 
 
 ### App Demo 
 
@@ -23,7 +23,7 @@ Bitcoin Average API: Bitcoin Average's REST API is integrated to get the current
 
 4) Clean and beautiful UI screens.
 
-5) App works in both potrait and landscape mode. 
+5) The app works in both portrait and landscape mode. 
 
 6) App work across all iPhones starting from iPhone SE to iPhone X and in all orientations. 
 
