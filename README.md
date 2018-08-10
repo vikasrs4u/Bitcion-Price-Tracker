@@ -3,6 +3,8 @@ Bit Pricer is an iOS app for iPhone that lets you know the current asking price 
 
 ### App Demo 
 
+![bit pricer mp4](https://user-images.githubusercontent.com/22437872/43932519-67f0aca8-9bf9-11e8-85d8-24aa94c988be.gif)
+
 
 ### API Used
 
