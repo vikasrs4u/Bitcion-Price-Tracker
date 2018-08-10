@@ -89,7 +89,6 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
                 
                 let bitCoinJSON :JSON = JSON(response.result.value!)
                 
-                print(bitCoinJSON)
                 self.updateBitCoinData(jsonValue: bitCoinJSON)
                 
             }
